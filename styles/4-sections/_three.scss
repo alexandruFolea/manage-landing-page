@@ -1,12 +1,13 @@
 .section-three {
 	height: 100vh;
 	width: 100%;
-	// background: $pale-red;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 10rem;
+	position: relative;
+	z-index: 10;
 
 	.three-title {
 		order: 1;

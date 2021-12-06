@@ -51,25 +51,25 @@ const Navigation = () => {
 			<ul className={open ? 'navbar__list active' : 'navbar__list'}>
 				<li onClick={closeMobileMenu}>
 					{open ? <SiHomeassistant /> : ''}
-					<Link href='/'>
+					<Link href='#'>
 						<a>Home</a>
 					</Link>
 				</li>
 				<li onClick={closeMobileMenu}>
 					{open ? <SiCapacitor /> : ''}
-					<Link href='/brand'>
+					<Link href='#'>
 						<a>Brand</a>
 					</Link>
 				</li>
 				<li onClick={closeMobileMenu}>
 					{open ? <SiHarbor /> : ''}
-					<Link href='/design'>
+					<Link href='#'>
 						<a>Design</a>
 					</Link>
 				</li>
 				<li onClick={closeMobileMenu}>
 					{open ? <SiOpenid /> : ''}
-					<Link href='/development'>
+					<Link href='#'>
 						<a>Development</a>
 					</Link>
 				</li>

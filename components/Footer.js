@@ -51,6 +51,9 @@ const Footer = () => {
 						</g>
 					</svg>
 				</div>
+				<div className='footer-copyright'>
+					<span>Copyright 2020. &copy; All rights reserved</span>
+				</div>
 			</div>
 		</footer>
 	);

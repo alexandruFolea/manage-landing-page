@@ -1,16 +1,31 @@
 .section-two {
 	@include max-width;
 	height: 75vh;
-	// background: beige;
 	display: flex;
 	justify-content: center;
 	padding: 5rem 2rem;
+
+	position: relative;
+	z-index: 10;
+
+	&::before {
+		@include pseudo;
+		background: url('/images/bg-tablet-pattern.svg');
+		@include bg-no-repeat;
+		height: 60rem;
+		width: 60rem;
+		bottom: -40%;
+		left: -20%;
+		z-index: 0;
+	}
 	@include md {
 		flex-direction: column;
 		height: 100vh;
 		padding: 5rem 0 5rem 2rem;
 	}
 	.two-left {
+		position: relative;
+		z-index: 10;
 		flex: 1;
 		h1 {
 			@include heading-1;
@@ -43,7 +58,8 @@
 	}
 	.two-right {
 		flex: 1;
-
+		position: relative;
+		z-index: 10;
 		li {
 			margin-bottom: 4rem;
 			padding-left: 10rem;

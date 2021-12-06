@@ -1,6 +1,5 @@
 .brand {
-	height: 100vh;
+	height: 70vh;
 	@include max-width;
-	// background: url('/images/avatar-ali.png');
-	// @include bg-no-repeat;
+	@include flex-center-column;
 }
