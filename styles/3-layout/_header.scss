@@ -26,7 +26,7 @@
 
 		&.active {
 			a {
-				color: $crimson;
+				color: $pale-red;
 			}
 		}
 	}
@@ -97,7 +97,7 @@
 				}
 
 				svg {
-					color: $crimson;
+					color: $bright-red;
 					font-size: 2.4rem;
 					margin-right: 1rem;
 				}
@@ -114,11 +114,11 @@
 			display: block;
 			cursor: pointer;
 			font-size: 3rem;
-			color: $mono2;
+			color: $very-dark-blue;
 			margin-bottom: 1rem;
 		}
 		&.active {
-			color: $crimson;
+			color: $bright-red;
 		}
 	}
 	.nav-cta {
