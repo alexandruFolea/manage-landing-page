@@ -75,7 +75,7 @@
 	margin-bottom: 0.35rem;
 	line-height: 1.2;
 	// color: inherit;
-	@include sec-font;
+	@include main-font;
 }
 
 @mixin heading-1 {
@@ -115,7 +115,7 @@
 @mixin paragraph() {
 	font-size: 1.6rem;
 	line-height: 1.2;
-	font-weight: 200;
+	font-weight: 400;
 	@include main-font;
 }
 @mixin span() {

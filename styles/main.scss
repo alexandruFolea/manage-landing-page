@@ -9,11 +9,18 @@
 @import '1-helpers/typography';
 
 //2
+@import '2-individuals/cta';
 
 //3 layout
 @import '3-layout/footer';
 @import '3-layout/header';
 @import '3-layout/layout';
 
+@import '4-sections/hero';
+@import '4-sections/two';
+@import '4-sections/three';
+@import '4-sections/four';
+
 //5 pages
 @import '5-pages/home';
+@import '5-pages/brand';

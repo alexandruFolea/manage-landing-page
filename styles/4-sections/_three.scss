@@ -1,0 +1,107 @@
+.section-three {
+	height: 100vh;
+	width: 100%;
+	// background: $pale-red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10rem;
+
+	.three-title {
+		order: 1;
+		margin-bottom: 8rem;
+		h1 {
+			@include heading-1;
+			color: $dark-blue;
+			text-align: center;
+		}
+	}
+	.three-profile-tabs {
+		order: 3;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 5rem;
+		.tab {
+			// background: red;
+			margin-right: 1.5rem;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&.active-tab {
+				color: $bright-red;
+
+				svg {
+					font-size: 2rem;
+					opacity: 1;
+				}
+			}
+			svg {
+				font-size: 1.2rem;
+				opacity: 0.6;
+				cursor: pointer;
+			}
+		}
+	}
+	.three-profile-card {
+		order: 2;
+		margin-bottom: 4rem;
+		.profile-card {
+			display: none;
+
+			&.active-card {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				max-width: 50rem;
+				margin: auto;
+				background: $mono8;
+				padding: 4rem;
+				box-shadow: $box-sh9;
+				position: relative;
+
+				.card-image {
+					position: absolute;
+					top: -3rem;
+				}
+				.card-name {
+					margin-top: 2rem;
+					h4 {
+						@include heading-3;
+					}
+				}
+				.card-bio {
+					p {
+						font-size: 1.4rem;
+						font-family: $main-f;
+						line-height: 1.8;
+						font-weight: 400;
+						text-align: center;
+						color: $dark-grayish-blue;
+						letter-spacing: 0.2rem;
+						padding: 0 1.4rem;
+					}
+				}
+
+				@include md {
+					@include flex-center-column;
+					position: relative;
+
+					.card-image {
+					}
+					.card-name {
+						margin: 2rem 0;
+					}
+				}
+			}
+		}
+	}
+	.three-cta {
+		order: 4;
+		text-align: center;
+	}
+}

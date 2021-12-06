@@ -7,6 +7,8 @@ import {
 	SiHarbor,
 	SiOpenid,
 } from 'react-icons/si';
+import Image from 'next/image';
+import CtaButton from './CtaButton';
 
 const Navigation = () => {
 	let windowSize = 720;
@@ -14,10 +16,6 @@ const Navigation = () => {
 	const [open, setOpen] = useState(false);
 	const handleClick = () => setOpen(!open);
 	const closeMobileMenu = () => setOpen(false);
-
-	// if (window.innerWidth > 720) {
-	// 	closeMobileMenu();
-	// }
 
 	useEffect(() => {
 		const handleResize = () => {
@@ -38,7 +36,14 @@ const Navigation = () => {
 				onClick={closeMobileMenu}
 			>
 				<Link href='/'>
-					<a>Logo</a>
+					<a>
+						<Image
+							src='/images/logo.svg'
+							width='200'
+							height='60'
+							alt='illustration'
+						/>
+					</a>
 				</Link>
 				{/* <h1>Logo</h1> */}
 			</div>
@@ -69,6 +74,9 @@ const Navigation = () => {
 					</Link>
 				</li>
 			</ul>
+			<div className='nav-cta'>
+				<CtaButton text='get started' />
+			</div>
 
 			<div
 				className={open ? 'navbar__burger active' : 'navbar__burger'}

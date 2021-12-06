@@ -1,0 +1,42 @@
+.section-four {
+	width: 100%;
+	background: $bright-red;
+
+	.section-four-wrapper {
+		@include max-width;
+		padding: 6rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include lg {
+			flex-direction: column;
+		}
+		h4 {
+			// flex: 1;
+			font-family: $main-f;
+			font-size: 4rem;
+			color: $pale-red;
+			max-width: 50%;
+
+			@include md {
+				max-width: 100%;
+				padding: 2rem 4rem;
+				text-align: center;
+			}
+		}
+
+		a {
+			// flex: 0.1;
+			color: $bright-red;
+			background: $pale-red;
+			margin: 2rem 0;
+			padding: 1.5rem 4rem;
+			border-radius: 5rem;
+			box-shadow: $box-sh3;
+			font-family: $main-f;
+			text-transform: capitalize;
+			@include flex-center-row;
+		}
+	}
+}

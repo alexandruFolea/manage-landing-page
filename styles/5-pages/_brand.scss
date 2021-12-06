@@ -1,0 +1,6 @@
+.brand {
+	height: 100vh;
+	@include max-width;
+	// background: url('/images/avatar-ali.png');
+	// @include bg-no-repeat;
+}

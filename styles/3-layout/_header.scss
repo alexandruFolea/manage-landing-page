@@ -6,7 +6,11 @@
 	justify-content: space-between;
 	padding: 2rem;
 	color: $mono2;
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 400;
 
 	&__logo {
 		a {
@@ -15,6 +19,10 @@
 		}
 		position: relative;
 		z-index: 200;
+
+		img {
+			object-fit: contain;
+		}
 
 		&.active {
 			a {
@@ -27,12 +35,12 @@
 		@include flex-center-row;
 
 		li {
-			@include paragraph;
 			margin-right: 4rem;
 
 			a {
+				@include span;
 				color: $mono2;
-				font-weight: 600;
+				font-weight: 300;
 				letter-spacing: 0.15rem;
 			}
 		}
@@ -107,9 +115,15 @@
 			cursor: pointer;
 			font-size: 3rem;
 			color: $mono2;
+			margin-bottom: 1rem;
 		}
 		&.active {
 			color: $crimson;
+		}
+	}
+	.nav-cta {
+		@include md {
+			display: none;
 		}
 	}
 }

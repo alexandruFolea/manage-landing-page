@@ -1,4 +1,8 @@
 import Head from 'next/head';
+import Image from 'next/image';
+import CtaButton from '../components/CtaButton';
+import Footer from '../components/Footer';
+import SectionThree from '../components/SectionThree';
 
 export default function Home() {
 	return (
@@ -9,16 +13,79 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<section className='main__section'>
-				<div className='main__section__wrapper'>
-					<div className='container container__left'>
-						<h1>I`m Left</h1>
-					</div>
-					<div className='container container__right'>
-						<h1>I`m right</h1>
-					</div>
+			<section className='hero'>
+				<div className='hero-left'>
+					<h1>Bring everyone together to build better products.</h1>
+					<p>
+						Manage makes it simple for software teams to plan day-to-day tasks
+						while keeping the larger team goals in view.
+					</p>
+					<CtaButton text='get started' />
+				</div>
+				<div className='hero-right'>
+					<Image
+						src='/images/illustration-intro.svg'
+						width='400'
+						height='400'
+						alt='illustration'
+					/>
 				</div>
 			</section>
+			{/* second section */}
+
+			<section className='section-two'>
+				<div className='two-left'>
+					<h1>What’s different about Manage?</h1>
+					<p>
+						Manage provides all the functionality your team needs, without the
+						complexity. Our software is tailor-made for modern digital product
+						teams.{' '}
+					</p>
+				</div>
+				<div className='two-right'>
+					<ul>
+						<li>
+							<h4>
+								<span>01</span>Track company-wide progress
+							</h4>
+							<p>
+								See how your day-to-day tasks fit into the wider vision. Go from
+								tracking progress at the milestone level all the way done to the
+								smallest of details. Never lose sight of the bigger picture
+								again.
+							</p>
+						</li>
+						<li>
+							<h4>
+								<span>02</span>Advanced built-in reports
+							</h4>
+							<p>
+								Set internal delivery estimates and track progress toward
+								company goals. Our customisable dashboard helps you build out
+								the reports you need to keep key stakeholders informed.
+							</p>
+						</li>
+						<li>
+							<h4>
+								<span>03</span>Everything you need in one place
+							</h4>
+							<p>
+								Stop jumping from one service to another to communicate, store
+								files, track tasks and share documents. Manage offers an
+								all-in-one team productivity solution.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<SectionThree />
+			<section className='section-four'>
+				<div className='section-four-wrapper'>
+					<h4>Simplify how your team works today</h4>
+					<a href='#'>get started</a>
+				</div>
+			</section>
+			{/* <Footer /> */}
 		</div>
 	);
 }
